@@ -102,37 +102,44 @@ function App() {
                     </div>
                 </div>
             </section>
-            <section id="call-to-action" className="flex flex-col gap-8 p-16 ">
+            <section
+                id="call-to-action"
+                className="flex flex-col gap-8 p-16 items-center"
+            >
                 <p className="text-xl text-[#FFCB37] font-semibold text-center">
                     Your New Animation Destination
                 </p>
-                <div className="flex md:gap-8 gap-2 mx-auto items-center justify-between">
+                <div className="flex flex-nowrap md:gap-16 gap-8 mx-auto items-center justify-between">
                     <img
                         src="./hollywood.png"
                         alt="beach"
-                        className="aspect-auto flex w-full"
+                        className="aspect-auto flex w-24 md:w-1/3"
                     />
                     <FaCircleChevronRight
                         color="#FFCB37"
-                        className="md:size-12 size-8"
+                        className="md:size-12 size-6"
+                        // size={24}
                     />
                     <img
                         src="./beach.png"
                         alt="beach"
-                        className="aspect-auto flex w-full"
+                        className="aspect-auto flex w-24 md:w-1/3"
                     />
                 </div>
                 <p className="text-white text-md font-bold md:font-normal md:text-lg text-center">
                     Jump aboard as we become the World’s #1 Storytelling
                     Platform!
                 </p>
-                <form action="" className="flex items-center">
+                <form
+                    action=""
+                    className="flex items-center md:w-full w-[300px]"
+                >
                     <input
                         type="email"
                         placeholder="Email Address"
-                        className="p-2 rounded-md"
+                        className="p-2 rounded-md grow"
                     />
-                    <button className="p-2 rounded-md bg-[#FFCB37] flex text-xs w-fit grow">
+                    <button className="p-2 rounded-md bg-[#FFCB37] flex text-xs w-fit ">
                         Join Waitlist
                     </button>
                 </form>
